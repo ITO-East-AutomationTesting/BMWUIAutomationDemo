@@ -1,0 +1,17 @@
+platformName: ios
+
+platformVersion: 12.1
+
+deviceName: Terry
+udid: 61d6e6e126f7e6bf9883425154f895fa7995b6ff
+
+app: de.bmw.connected.cn
+noReset: False
+
+automationName: XCUITest
+useNewWDA: False
+commandTimeouts: 35000
+newCommandTimeout: 1000
+
+ip: 127.0.0.1
+port: 4723

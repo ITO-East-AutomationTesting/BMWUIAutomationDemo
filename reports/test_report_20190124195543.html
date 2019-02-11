@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>UI Automation Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+    font-size: 16pt;
+    color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+    text-decoration: none;
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+a {text-decoration: none}
+
+.btn-show-summary, .btn-show-pass, .btn-show-fail, .btn-show-all {
+    width: 80px;
+    border: 1px;
+    border-radius: 0.5em;
+    padding: 8px;
+    margin: 8px;
+    text-align: center;
+    float: left;
+}
+
+.btn-show-summary {
+    width: 100px;
+    background-color: #0099CC;
+}
+.btn-show-pass {
+    background-color: #33CC66;
+}
+.btn-show-fail {
+    background-color: #FA8072;
+}
+.btn-show-all {
+    background-color: #66CCFF;
+}
+
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    /*color: white; */
+    background-color: #DFFFDF;
+    text-align: center;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; text-align: center; background-color: #F0F0F0;}
+.passClass  { background-color: #FFFACD; }
+.failClass  { background-color: #FA8072; }
+.errorClass { background-color: #FFFACD; }
+.passCase   { color: #33CC66; }
+.failCase   { color: #FA8072; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+//增加Pass筛选项，Summary收起所有case，Failed只展开fail的case，Pass只展开pass的case，All展开所有的case
+/* level - 0:Summary; 1:Pass; 2:Fail; 3:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'pt') {
+            if (level == 0 || level == 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'ft') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>UI Automation Test Report</h1>
+<p class='attribute'><strong>测试人员:</strong> Terry Xus</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-01-24 19:55:43</p>
+<p class='attribute'><strong>测试耗时:</strong> 0:01:08.473787</p>
+<p class='attribute'><strong>测试结果:</strong> 通过 1 失败 1 错误 1 通过率：33.33%</p>
+
+<p class='description'></p>
+</div>
+
+
+
+<div class='btn-show-summary'><a href='javascript:showCase(0)' style='color: white; text-decoration: none'>概要(33.33%)</a></div>
+<div class='btn-show-pass'><a href='javascript:showCase(1)' style='color: white; text-decoration: none'>通过(1)</a></div>
+<div class='btn-show-fail'><a href='javascript:showCase(2)' style='color: white; text-decoration: none'>失败(1)</a></div>
+<div class='btn-show-all'><a href='javascript:showCase(3)' style='color: white; text-decoration: none'>错误(1)</a></div>
+<div class='btn-show-all'><a href='javascript:showCase(4)' style='color: white; text-decoration: none'>所有(3)</a></div>
+
+
+
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+    <td>截图</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_login_demo.TestDemo</td>
+    <td align='center'>3</td>
+    <td align='center'>1</td>
+    <td align='center'>1</td>
+    <td align='center'>1</td>
+    <td align='center'><a href="javascript:showClassDetail('c1',3)" style='color: #4169E1; text-decoration: none'>查看详情</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login_demo: Test Login With Phone And Password</div></td>
+    <!--colspan: 单元格可横跨的列数-->
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        错误</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: 1. 输入手机号码和密码.
+2. 创建Pin码.
+screenshot_name:/Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195607.png
+Traceback (most recent call last):
+  File "/Users/Melanie/Desktop/bwm_demo/test_case/test_login_demo.py", line 33, in test_login_demo
+    self.assertEqual('创建4位数PIN码', loginPage.get_pin_message())
+  File "/Users/Melanie/Desktop/bwm_demo/businessView/bwm_login_page.py", line 37, in get_pin_message
+    return self.get_attribute(self.pin_label_message, 'label')
+  File "/Users/Melanie/Desktop/bwm_demo/baseView/baseView.py", line 86, in get_attribute
+    element = self.find_element(loc)
+  File "/Users/Melanie/Desktop/bwm_demo/baseView/baseView.py", line 25, in find_element
+    element = WebDriverWait(self.driver, 10).until(lambda x:x.find_element(*loc))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a  href="file:////Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195607.png" style='color: #4169E1 ; text-decoration: none'>查看截图</a>
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_fail</div></td>
+    <!--colspan: 单元格可横跨的列数-->
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        失败</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: screenshot_name:/Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195614.png
+Traceback (most recent call last):
+  File "/Users/Melanie/Desktop/bwm_demo/test_case/test_login_demo.py", line 60, in test_login_fail
+    self.assertEqual(1, 2)
+AssertionError: 1 != 2
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a  href="file:////Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195614.png" style='color: #4169E1 ; text-decoration: none'>查看截图</a>
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_out_demo: Test Logout BWM APP.</div></td>
+    <!--colspan: 单元格可横跨的列数-->
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: screenshot_name:/Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195650.png
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a  href="file:////Users/Melanie/Desktop/bwm_demo/reports/screenshot/screenshot_20190124195650.png" style='color: #4169E1 ; text-decoration: none'>查看截图</a>
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>总计</td>
+    <td>3</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>通过率: 33.33%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
