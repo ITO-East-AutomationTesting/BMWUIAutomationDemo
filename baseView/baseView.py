@@ -1,4 +1,4 @@
-# coding=uft-8
+# coding=utf-8
 import logging
 import os
 import sys
@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 
 class BaseView(object):
-    # btn = (MobileBy.IOS_PREDICATE, 'label=="Òş²Ø¼üÅÌ"')
+    # btn = (MobileBy.IOS_PREDICATE, 'label=="éšè—é”®ç›˜"')
     btn = (MobileBy.ACCESSIBILITY_ID, 'Done')
 
     def __init__(self, driver):
@@ -95,28 +95,28 @@ class BaseView(object):
             return False
 
     def get_window_size(self):
-        """»ñÈ¡ÆÁÄ»µÄ¸ß¶ÈºÍ¿í¶È"""
+        """è·å–å±å¹•çš„é«˜åº¦å’Œå®½åº¦"""
         height = self.driver.get_window_size()['height']
         width = self.driver.get_window_size()['width']
         return height, width
 
     def swipe_up(self):
-        """ÏòÉÏ»¬¶¯ÆÁÄ»"""
+        """å‘ä¸Šæ»‘åŠ¨å±å¹•"""
         height, width = self.get_window_size()
         self.driver.swipe(width/2, height * 3/4, width/2, height * 1/4)
 
     def swipe_down(self):
-        """ÏòÏÂ»¬¶¯ÆÁÄ»"""
+        """å‘ä¸‹æ»‘åŠ¨å±å¹•"""
         height, width = self.get_window_size()
         self.driver.swipe(width/2, height * 1/4, width/2, height * 3/4)
 
     def swipe_left(self):
-        """Ïò×ó»¬¶¯ÆÁÄ»"""
+        """å‘å·¦æ»‘åŠ¨å±å¹•"""
         height, width = self.get_window_size()
         self.driver.swipe(width * 3/4, height/2, width * 1/4, height/2)
 
     def swipe_right(self):
-        """ÏòÓÒ»¬¶¯ÆÁÄ»"""
+        """å‘å³æ»‘åŠ¨å±å¹•"""
         height, width = self.get_window_size()
         self.driver.swipe(width * 1/4, height/2, width * 3/4, height/2)
 
@@ -134,7 +134,7 @@ class BaseView(object):
         except:
             raise
 
-    # »ñÈ¡µ±Ç°activityµÄÃû³Æ
+    # è·å–å½“å‰activityçš„åç§°
     def get_current_activity_name(self):
         activity_name = self.driver.current_activity
         print('Current activity name is: %s' % activity_name)
