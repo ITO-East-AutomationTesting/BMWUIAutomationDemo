@@ -20,7 +20,9 @@ class BaseView(object):
         self.driver = driver
 
     def find_element(self, loc):
-        logging.info('Find element by %s: %s' % (loc[0], loc[1]))
+        # logging.info('Find element by %s: %s' % (loc[0], loc[1]))
+        logging.info('发现元素 %s: %s' % (loc[0], loc[1]))
+
         try:
             element = WebDriverWait(self.driver, 10).until(lambda x:x.find_element(*loc))
             return element
