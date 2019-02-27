@@ -1,4 +1,4 @@
-# coding=gbk
+# coding=uft-8
 import logging
 import os
 import sys
