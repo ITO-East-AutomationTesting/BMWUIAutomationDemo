@@ -2,14 +2,14 @@ platformName: ios
 
 platformVersion: 12.1
 
-deviceName: Terry
-udid: 61d6e6e126f7e6bf9883425154f895fa7995b6ff
+deviceName: chaotests
+udid: ba46042b307de9e7bd14f8e7f439c6c774f1154c
 
 app: de.bmw.connected.cn
 noReset: False
 
 automationName: XCUITest
-useNewWDA: False
+useNewWDA: false
 commandTimeouts: 35000
 newCommandTimeout: 1000
 

@@ -46,7 +46,7 @@ class BaseView(object):
             ele = self.find_element(loc)
             logging.info('Click element by %s: %s' % (loc[0], loc[1]))
             ele.click()
-            time.sleep(1)
+            # time.sleep(1)
         except AttributeError:
             raise
 
@@ -55,7 +55,7 @@ class BaseView(object):
             elements = self.find_elements(loc)
             logging.info('Click element by %s: %s' % (loc[0], loc[1]))
             elements[index].click()
-            time.sleep(1)
+            # time.sleep(1)
         except AttributeError:
             raise
 

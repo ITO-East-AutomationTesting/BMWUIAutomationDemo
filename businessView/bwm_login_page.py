@@ -1,12 +1,12 @@
 # coding=utf-8
 import os
 import sys
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from baseView.baseView import BaseView, MobileBy
 
 
 class LoginPage(BaseView):
-
     phone_number_textbox = (MobileBy.ACCESSIBILITY_ID, 'Phone Number Textbox')
     password_textbox = (MobileBy.ACCESSIBILITY_ID, 'Password Textbox')
 
@@ -27,11 +27,14 @@ class LoginPage(BaseView):
         self.set_value(self.password_textbox, password, need_hide_keyboard=True)
         self.click(self.login_button)
 
-    def create_pin_password(self, num1, num2, num3, num4):
-        self.set_value(self.pin_circle_0, num1)
-        self.set_value(self.pin_circle_1, num2)
-        self.set_value(self.pin_circle_2, num3)
-        self.set_value(self.pin_circle_3, num4)
+    def input_pin_code(self, num):
+        pinlocator = (MobileBy.ACCESSIBILITY_ID, '%s' % num)
+        self.click(pinlocator)
+
+        # self.set_value(self.pin_circle_0, num1)
+        # self.set_value(self.pin_circle_1, num2)
+        # self.set_value(self.pin_circle_2, num3)
+        # self.set_value(self.pin_circle_3, num4)
 
     def get_pin_message(self):
         return self.get_attribute(self.pin_label_message, 'label')
