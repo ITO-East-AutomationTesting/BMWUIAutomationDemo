@@ -4,7 +4,6 @@ import sys
 import time
 import random
 
-import self as self
 from appium.webdriver.common.touch_action import TouchAction
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
