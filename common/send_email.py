@@ -14,7 +14,7 @@ class SendEmail:
 
         # 创建一个带附件的邮件实例
         msg = MIMEMultipart()
-        # 以测试报告作为邮件正文
+        # 测试报告作为邮件正文
         msg.attach(MIMEText(mail_body, 'html', 'utf-8'))
         report_file = MIMEText(mail_body, 'html', 'utf-8')
         # 定义附件名称
