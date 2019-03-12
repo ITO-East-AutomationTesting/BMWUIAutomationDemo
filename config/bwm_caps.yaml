@@ -14,5 +14,5 @@ commandTimeouts: 35000
 newCommandTimeout: 1000
 
 #ip: 127.0.0.1  uu
-ip: 172.20.10.11
+ip: 172.16.181.110
 port: 4723
