@@ -5,6 +5,7 @@ import HTMLTestRunnerCN
 import time
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+from BeautifulReport.BeautifulReport import BeautifulReport
 from common import send_email
 
 
@@ -26,13 +27,10 @@ reportFile = "test_report_" + now + ".html"
 reportFilePath = os.path.join(base_dir, 'reports', reportFile)
 
 all_test_cases = create_suite()
-fp = open(reportFilePath, 'wb')
-
-runner = HTMLTestRunnerCN.HTMLTestRunner(stream=fp, title='UI Automation Test Report', tester='Terry Xus')
-
-runner.run(all_test_cases)
-
-fp.close()
+result = BeautifulReport(all_test_cases)
+result.report(filename="bwm_ui_automation_" + time.strftime('%Y%m%d%H%M%S') + ".html",
+              description='BMW UI Automation Report',
+              log_path=reportFilePath)
 
 # time.sleep(10)
 #

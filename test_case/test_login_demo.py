@@ -3,7 +3,7 @@ import os
 import sys
 import unittest
 import warnings
-
+import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from businessView.bwm_login_page import LoginPage
 from businessView.bwm_main_page import MainPage
@@ -12,8 +12,18 @@ from businessView.bwm_destination_page import DestinationPage
 from businessView.bmw_activity_page import ActivityPage
 from common.bwm_caps import bwm_desired
 from common.common_fun import Common
-import unittest
+from BeautifulReport.BeautifulReport import BeautifulReport
 from multiprocessing.dummy import Pool as ThreadPool
+
+base_dir = os.path.dirname(os.path.dirname(__file__))
+
+
+def save_img(self, img_name):
+    img_path = os.path.join(base_dir, 'img')
+    if self.web_driver is not None:
+        self.web_driver.get_screenshot_as_file('{}/{}.png'.format(img_path, img_name))
+    else:
+        self.driver.get_screenshot_as_file('{}/{}.png'.format(img_path, img_name))
 
 
 class TestDemo(unittest.TestCase):
@@ -46,6 +56,7 @@ class TestDemo(unittest.TestCase):
     # print('4. 是否启用Touch ID.')
     # loginPage.is_enable_touch_id()
 
+    @BeautifulReport.add_test_img('test_choose_destination_{}'.format(time.strftime('%Y%m%d%H%M%S')))
     def test_choose_destination(self):
         u'''Test Go To A Destination'''
         print('1. 输入Pin码.')
@@ -90,7 +101,7 @@ class TestDemo(unittest.TestCase):
         activityPage.click_toggle_trip_button()
 
     # self.assertEquals()
-
+    @BeautifulReport.add_test_img('test_login_out_demo_{}'.format(time.strftime('%Y%m%d%H%M%S')))
     def test_login_out_demo(self):
         u'''Test Logout BWM APP.'''
         print('1. 输入Pin码.')
