@@ -18,15 +18,11 @@ from multiprocessing.dummy import Pool as ThreadPool
 base_dir = os.path.dirname(os.path.dirname(__file__))
 
 
-def save_img(self, img_name):
-    img_path = os.path.join(base_dir, 'img')
-    if self.web_driver is not None:
-        self.web_driver.get_screenshot_as_file('{}/{}.png'.format(img_path, img_name))
-    else:
-        self.driver.get_screenshot_as_file('{}/{}.png'.format(img_path, img_name))
-
-
 class TestDemo(unittest.TestCase):
+
+    def save_img(self, img_name):
+        img_path = os.path.join(base_dir, 'img')
+        self.driver.get_screenshot_as_file('{}/{}.png'.format(img_path, img_name))
 
     def setUp(self):
         warnings.simplefilter("ignore", ResourceWarning)
