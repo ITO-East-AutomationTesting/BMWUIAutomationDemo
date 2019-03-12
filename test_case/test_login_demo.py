@@ -7,7 +7,7 @@ import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from businessView.bwm_login_page import LoginPage
 from businessView.bwm_main_page import MainPage
-from businessView.bwm_more_page import MorePage
+from businessView.bmw_service_page import ServicePage
 from businessView.bwm_destination_page import DestinationPage
 from businessView.bmw_activity_page import ActivityPage
 from common.bwm_caps import bwm_desired
@@ -98,7 +98,7 @@ class TestDemo(unittest.TestCase):
 
     # self.assertEquals()
     @BeautifulReport.add_test_img('test_login_out_demo_{}'.format(time.strftime('%Y%m%d%H%M%S')))
-    def test_login_out_demo(self):
+    def test_add_oil_card(self):
         u'''Test Logout BWM APP.'''
         print('1. 输入Pin码.')
         loginPage = LoginPage(self.driver)
@@ -106,9 +106,17 @@ class TestDemo(unittest.TestCase):
         for value in [1, 2, 3, 4]:
             loginPage.input_pin_code(value)
 
-        print('2. 点击更多.')
+        print('2. 点击服务.')
         mainPage = MainPage(self.driver)
-        mainPage.click_bottom_button_by_name('更多')
+        mainPage.click_bottom_button_by_name('服务')
+
+        print('3. 选择加油卡代充值')
+        whi
+        servicePage = ServicePage(self.driver)
+        servicePage.select_tile('加油卡代充值')
+        # servicePage.drag_up()
+
+        # mainPage.swipe_down()
 
         # print('3. 点击个人资料.')
         # morePage = MorePage(self.driver)
