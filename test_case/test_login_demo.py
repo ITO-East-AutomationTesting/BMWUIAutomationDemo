@@ -106,28 +106,11 @@ class TestDemo(unittest.TestCase):
         for value in [1, 2, 3, 4]:
             loginPage.input_pin_code(value)
 
-        print('2. 点击服务.')
+        print('2. 点击更多.')
         mainPage = MainPage(self.driver)
-        mainPage.click_bottom_button_by_name('服务')
+        mainPage.click_bottom_button_by_name('更多')
 
-        print('3. 选择加油卡代充值')
-    
-        servicePage = ServicePage(self.driver)
-        servicePage.select_tile('加油卡代充值')
-        # servicePage.drag_up()
-
-        # mainPage.swipe_down()
-
-        # print('3. 点击个人资料.')
-        # morePage = MorePage(self.driver)
-        # morePage.click_button_by_name('个人资料')
-        #
-        # print('4. 点击注销.')
-        # morePage.click_logout_button()
-        # self.assertEqual('是否确定要注销？', morePage.get_title_label())
-        #
-        # print('5. 确定是否注销.')
-        # morePage.is_logout_click()
+        # print('3. 选择加油卡代充值')
 
 
 if __name__ == '__main__':
