@@ -7,13 +7,13 @@ import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from businessView.bwm_login_page import LoginPage
 from businessView.bwm_main_page import MainPage
-from businessView.bmw_service_page import ServicePage
+# from businessView.bmw_service_page import ServicePage
 from businessView.bwm_destination_page import DestinationPage
 from businessView.bmw_activity_page import ActivityPage
 from common.bwm_caps import bwm_desired
 from common.common_fun import Common
 from BeautifulReport.BeautifulReport import BeautifulReport
-from multiprocessing.dummy import Pool as ThreadPool
+# from multiprocessing.dummy import Pool as ThreadPool
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 
