@@ -111,7 +111,7 @@ class TestDemo(unittest.TestCase):
         mainPage.click_bottom_button_by_name('服务')
 
         print('3. 选择加油卡代充值')
-        whi
+    
         servicePage = ServicePage(self.driver)
         servicePage.select_tile('加油卡代充值')
         # servicePage.drag_up()
