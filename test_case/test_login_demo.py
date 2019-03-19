@@ -98,7 +98,7 @@ class TestDemo(unittest.TestCase):
 
     # self.assertEquals()
     @BeautifulReport.add_test_img('test_login_out_demo_{}'.format(time.strftime('%Y%m%d%H%M%S')))
-    def test_add_oil_card(self):
+    def test_more_option(self):
         u'''Test Logout BWM APP.'''
         print('1. 输入Pin码.')
         loginPage = LoginPage(self.driver)
@@ -109,7 +109,7 @@ class TestDemo(unittest.TestCase):
         print('2. 点击更多.')
         mainPage = MainPage(self.driver)
         mainPage.click_bottom_button_by_name('更多')
-
+        self.assertIsNotNone(None)
         # print('3. 选择加油卡代充值')
 
 
