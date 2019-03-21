@@ -23,7 +23,7 @@ class BaseView(object):
         logging.info(('Find element by %s: %s' % (loc[0], loc[1])).encode('utf-8'))
 
         try:
-            element = WebDriverWait(self.driver, 10).until(lambda x:x.find_element(*loc))
+            element = WebDriverWait(self.driver, 30).until(lambda x:x.find_element(*loc))
             return element
         except NoSuchElementException:
             logging.error('Can not find element: %s' % loc[1])
@@ -35,7 +35,7 @@ class BaseView(object):
     def find_elements(self, loc):
         logging.info(('Find elements by %s: %s' % (loc[0], loc[1])).encode('utf-8'))
         try:
-            elements = WebDriverWait(self.driver, 10).until(EC.presence_of_all_elements_located(locator=loc))
+            elements = WebDriverWait(self.driver, 30).until(EC.presence_of_all_elements_located(locator=loc))
             return elements
         except NoSuchElementException:
             logging.error('Can not find element: %s' % loc[1])
