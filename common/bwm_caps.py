@@ -6,7 +6,6 @@ import logging.config
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 base_dir = os.path.dirname(os.path.dirname(__file__))
 log_file_path = os.path.join(base_dir, 'config/log.conf')
 logging.config.fileConfig(log_file_path)
