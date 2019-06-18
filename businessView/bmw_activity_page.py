@@ -1,18 +1,11 @@
 # coding=utf-8
-import os
-import sys
-import time
-import random
 
-from appium.webdriver.common.touch_action import TouchAction
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from baseView.baseView import BaseView, MobileBy
 
 
 class ActivityPage(BaseView):
     toggle_trip_button = (MobileBy.ACCESSIBILITY_ID, 'Toggle Trip Button')
-    connect_to_usb_prompt = (MobileBy.ACCESSIBILITY_ID, 'Connect to USB Prompt')
+    connect_to_usb_prompt = (MobileBy.ACCESSIBILITY_ID, '连接车辆，开始导航。')
 
     def click_toggle_trip_button(self):
         self.click(self.toggle_trip_button)

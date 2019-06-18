@@ -1,15 +1,11 @@
 # coding=utf-8
-import sys, os
+import os
 import yaml
-import logging
-import logging.config
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
+from utils.base_phone_information import *
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
-log_file_path = os.path.join(base_dir, 'config/log.conf')
-logging.config.fileConfig(log_file_path)
-logging = logging.getLogger()
 
 
 def bwm_desired():
@@ -19,9 +15,9 @@ def bwm_desired():
 
     desired_caps = {
         "platformName": data["platformName"],
-        "platformVersion": data["platformVersion"],
-        "deviceName": data["deviceName"],
-        "udid": data["udid"],
+        "platformVersion": get_device_version(),
+        "deviceName": get_device_name(),
+        "udid": get_device_udid(),
         "app": data["app"],
         "noReset": data["noReset"],
         "automationName": data["automationName"],
@@ -29,8 +25,6 @@ def bwm_desired():
         "commandTimeouts": data["commandTimeouts"],
         "newCommandTimeout": data["newCommandTimeout"]
     }
-
-    logging.info("Start APP.")
     driver = webdriver.Remote('http://' + str(data['ip']) + ':' + str(data['port']) + '/wd/hub', desired_caps)
     return driver
 

@@ -1,6 +1,6 @@
 platformName: ios
 
-platformVersion: 12.1
+platformVersion: 12.3.1
 
 deviceName: chaotests
 udid: ba46042b307de9e7bd14f8e7f439c6c774f1154c
@@ -13,6 +13,6 @@ useNewWDA: false
 commandTimeouts: 35000
 newCommandTimeout: 1000
 
-#ip: 127.0.0.1test
-ip: 10.10.100.120
+ip: 192.168.113.38
+#ip: 10.10.100.120
 port: 4723

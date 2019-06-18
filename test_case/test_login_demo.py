@@ -1,15 +1,14 @@
 # coding=utf-8
 import os
-import sys
 import unittest
 import warnings
 import time
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from businessView.bwm_login_page import LoginPage
 from businessView.bwm_main_page import MainPage
 # from businessView.bmw_service_page import ServicePage
 from businessView.bwm_destination_page import DestinationPage
 from businessView.bmw_activity_page import ActivityPage
+from businessView.bwm_more_page import MorePage
 from common.bwm_caps import bwm_desired
 from common.common_fun import Common
 from BeautifulReport.BeautifulReport import BeautifulReport
@@ -31,7 +30,6 @@ class TestDemo(unittest.TestCase):
         self.commonView.skip_load_page()
 
     def tearDown(self):
-        self.commonView.get_screenshot()
         self.driver.quit()
 
     #
@@ -67,11 +65,8 @@ class TestDemo(unittest.TestCase):
             loginPage.input_pin_code(value)
         # loginPage.input_pin_password(1, 2, 3, 4)
 
-
         print('2. 点击目的地.')
         mainPage = MainPage(self.driver)
-        # mainPage.click_bottom_button_by_name('车辆')
-        # self.assertEqual(mainPage.get_attribute())
         mainPage.click_bottom_button_by_name('目的地')
 
         print('2. 点击想要去哪里.')
@@ -96,7 +91,6 @@ class TestDemo(unittest.TestCase):
         self.assertEqual(activityPage.get_attribute(activityPage.connect_to_usb_prompt, 'value'), '连接车辆，开始导航。')
         activityPage.click_toggle_trip_button()
 
-    # self.assertEquals()
     @BeautifulReport.add_test_img('test_login_out_demo_{}'.format(time.strftime('%Y%m%d%H%M%S')))
     def test_more_option(self):
         u'''Test Logout BWM APP.'''
@@ -109,8 +103,17 @@ class TestDemo(unittest.TestCase):
         print('2. 点击更多.')
         mainPage = MainPage(self.driver)
         mainPage.click_bottom_button_by_name('更多')
-        self.assertIsNotNone(None)
-        # print('3. 选择加油卡代充值')
+
+        print('3. 点击个人资料')
+        morePage = MorePage(self.driver)
+        morePage.click_button_by_name('个人资料')
+
+        print('4. 点击注销按钮')
+        morePage.click_logout_button()
+
+        print('5. 确认注销')
+        self.assertEqual(morePage.get_title_label(), '是否确定要注销？')
+        morePage.is_logout_click()
 
 
 if __name__ == '__main__':

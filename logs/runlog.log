@@ -288,3 +288,239 @@
 2019-03-19 14:38:35,400 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
 2019-03-19 14:38:36,649 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x9c\x8d\xe5\x8a\xa1'
 2019-03-19 14:38:39,093 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x9c\x8d\xe5\x8a\xa1'
+2019-03-19 14:48:11,963 bwm_caps.py[line:34] INFO Start APP.
+2019-03-19 14:48:20,954 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-19 14:48:21,798 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-19 14:48:23,756 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-19 14:48:24,710 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-19 14:48:26,427 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-19 14:48:26,659 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-19 14:48:27,967 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-19 14:48:28,225 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-19 14:48:29,778 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-19 14:48:32,371 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-19 14:48:33,789 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-19 14:48:36,103 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-19 14:48:38,935 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-19 14:48:40,376 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-19 14:48:46,547 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-03-19 14:48:55,201 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-19 14:48:56,101 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-19 14:49:02,604 baseView.py[line:23] INFO b'Find element by accessibility id: Start Trip Button'
+2019-03-19 14:49:04,813 baseView.py[line:48] INFO b'Click element by accessibility id: Start Trip Button'
+2019-03-19 14:49:07,083 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-19 14:49:08,226 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-19 14:49:12,589 baseView.py[line:23] INFO b'Find element by accessibility id: Connect to USB Prompt'
+2019-03-19 14:49:14,641 baseView.py[line:23] INFO b'Find element by accessibility id: Toggle Trip Button'
+2019-03-19 14:49:14,978 baseView.py[line:48] INFO b'Click element by accessibility id: Toggle Trip Button'
+2019-03-19 14:49:19,129 bwm_caps.py[line:34] INFO Start APP.
+2019-03-19 14:49:25,729 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-19 14:49:26,301 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-19 14:49:28,250 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-19 14:49:29,261 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-19 14:49:31,280 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-19 14:49:32,435 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-19 14:49:34,344 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-19 14:49:35,198 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-19 14:49:36,609 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-19 14:49:38,950 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-20 18:53:36,198 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 18:54:22,368 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 18:54:40,906 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-20 18:54:41,072 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-20 18:54:42,297 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-20 18:54:42,490 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-20 18:54:43,652 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-20 18:54:43,828 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-20 18:54:44,973 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-20 18:54:45,181 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-20 18:54:46,383 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-20 18:54:49,040 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-20 18:54:50,282 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-20 18:54:52,925 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-20 18:54:55,485 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-20 18:54:57,065 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-20 18:55:03,350 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-03-20 18:55:11,160 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-20 18:55:12,022 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-20 18:55:18,248 baseView.py[line:23] INFO b'Find element by accessibility id: Start Trip Button'
+2019-03-20 18:55:20,206 baseView.py[line:48] INFO b'Click element by accessibility id: Start Trip Button'
+2019-03-20 18:55:22,149 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-20 18:55:22,610 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-20 18:55:24,629 baseView.py[line:23] INFO b'Find element by accessibility id: Connect to USB Prompt'
+2019-03-20 18:55:26,243 baseView.py[line:23] INFO b'Find element by accessibility id: Toggle Trip Button'
+2019-03-20 18:55:26,499 baseView.py[line:48] INFO b'Click element by accessibility id: Toggle Trip Button'
+2019-03-20 18:55:29,522 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 18:55:36,576 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-20 18:55:36,727 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-20 18:55:37,943 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-20 18:55:38,152 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-20 18:55:39,322 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-20 18:55:39,494 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-20 18:55:40,681 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-20 18:55:40,864 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-20 18:55:42,043 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-20 18:55:44,399 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-20 19:23:45,192 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 19:23:52,566 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-20 19:23:52,737 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-20 19:23:54,012 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-20 19:23:54,233 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-20 19:23:55,633 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-20 19:23:55,836 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-20 19:23:57,217 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-20 19:23:57,400 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-20 19:23:58,602 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-20 19:24:01,283 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-20 19:24:02,638 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-20 19:24:04,986 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-03-20 19:24:07,769 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-20 19:24:09,377 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-03-20 19:24:15,408 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-03-20 19:24:23,245 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-20 19:24:24,127 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-03-20 19:24:30,168 baseView.py[line:23] INFO b'Find element by accessibility id: Start Trip Button'
+2019-03-20 19:24:32,224 baseView.py[line:48] INFO b'Click element by accessibility id: Start Trip Button'
+2019-03-20 19:24:34,341 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-20 19:24:34,803 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-03-20 19:24:36,599 baseView.py[line:23] INFO b'Find element by accessibility id: Connect to USB Prompt'
+2019-03-20 19:24:38,573 baseView.py[line:23] INFO b'Find element by accessibility id: Toggle Trip Button'
+2019-03-20 19:24:38,860 baseView.py[line:48] INFO b'Click element by accessibility id: Toggle Trip Button'
+2019-03-20 19:24:42,099 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 19:24:50,105 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-20 19:24:50,287 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-20 19:24:51,514 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-20 19:24:51,681 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-20 19:24:52,856 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-20 19:24:53,030 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-20 19:24:54,214 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-20 19:24:54,416 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-20 19:24:55,705 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-20 19:24:58,010 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x9b\xb4\xe5\xa4\x9a'
+2019-03-20 19:42:50,926 bwm_caps.py[line:34] INFO Start APP.
+2019-03-20 19:43:00,145 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-03-20 19:43:00,344 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-03-20 19:43:01,573 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-03-20 19:43:01,752 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-03-20 19:43:02,990 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-03-20 19:43:03,177 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-03-20 19:43:04,354 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-03-20 19:43:04,536 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-03-20 19:43:05,696 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-03-21 13:32:37,327 bwm_caps.py[line:34] INFO Start APP.
+2019-03-21 13:33:01,691 bwm_caps.py[line:34] INFO Start APP.
+2019-03-21 13:33:52,988 bwm_caps.py[line:34] INFO Start APP.
+2019-03-21 13:34:11,865 bwm_caps.py[line:34] INFO Start APP.
+2019-03-21 13:35:03,667 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:34:02,399 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:34:02,623 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:54:08,304 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:54:08,578 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:58:47,320 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:58:57,065 bwm_caps.py[line:34] INFO Start APP.
+2019-04-01 17:58:57,313 bwm_caps.py[line:34] INFO Start APP.
+2019-06-17 22:09:04,011 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:17:54,524 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:18:11,441 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:18:34,271 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:20:04,496 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:26:47,682 bwm_caps.py[line:33] INFO Start APP.
+2019-06-17 22:27:05,313 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 13:51:01,146 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 14:00:29,529 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 14:01:15,049 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:07:49,400 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:08:46,717 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:09:00,192 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-06-18 15:09:11,614 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-06-18 15:09:58,346 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:10:06,383 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-06-18 15:10:06,766 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-06-18 15:10:07,494 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-06-18 15:10:07,899 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-06-18 15:10:08,575 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-06-18 15:10:08,974 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-06-18 15:10:09,817 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-06-18 15:10:10,229 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-06-18 15:10:11,030 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:10:12,516 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:10:13,276 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:10:16,136 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:10:17,414 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:10:19,248 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:10:22,893 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-06-18 15:10:27,918 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:19:39,140 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:19:49,184 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-06-18 15:19:49,643 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-06-18 15:19:50,469 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-06-18 15:19:50,900 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-06-18 15:19:51,668 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-06-18 15:19:52,080 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-06-18 15:19:52,768 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-06-18 15:19:53,254 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-06-18 15:19:53,990 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:19:55,717 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:19:56,592 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:19:59,323 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:20:00,235 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:20:01,970 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:20:05,595 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-06-18 15:20:14,602 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:20:22,924 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:20:34,703 baseView.py[line:23] INFO b'Find element by accessibility id: Start Trip Button'
+2019-06-18 15:21:04,879 baseView.py[line:32] ERROR Time out to find element: Start Trip Button
+2019-06-18 15:28:07,229 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:28:16,231 baseView.py[line:23] INFO b'Find element by accessibility id: 1'
+2019-06-18 15:28:16,653 baseView.py[line:48] INFO b'Click element by accessibility id: 1'
+2019-06-18 15:28:17,319 baseView.py[line:23] INFO b'Find element by accessibility id: 2'
+2019-06-18 15:28:17,766 baseView.py[line:48] INFO b'Click element by accessibility id: 2'
+2019-06-18 15:28:18,559 baseView.py[line:23] INFO b'Find element by accessibility id: 3'
+2019-06-18 15:28:18,991 baseView.py[line:48] INFO b'Click element by accessibility id: 3'
+2019-06-18 15:28:19,773 baseView.py[line:23] INFO b'Find element by accessibility id: 4'
+2019-06-18 15:28:20,206 baseView.py[line:48] INFO b'Click element by accessibility id: 4'
+2019-06-18 15:28:20,959 baseView.py[line:23] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:28:22,491 baseView.py[line:48] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:28:23,757 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:28:33,644 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:28:34,545 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:28:36,246 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:28:39,802 baseView.py[line:23] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-06-18 15:28:50,505 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:28:58,499 baseView.py[line:36] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:29:09,497 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\x9c\xa8\xe8\xbd\xa6\xe5\x86\x85\xe5\xbc\x80\xe5\xa7\x8b'
+2019-06-18 15:29:12,896 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\x9c\xa8\xe8\xbd\xa6\xe5\x86\x85\xe5\xbc\x80\xe5\xa7\x8b'
+2019-06-18 15:29:13,946 baseView.py[line:23] INFO b'Find element by accessibility id: \xe5\xa5\xbd'
+2019-06-18 15:29:14,696 baseView.py[line:48] INFO b'Click element by accessibility id: \xe5\xa5\xbd'
+2019-06-18 15:29:15,498 baseView.py[line:23] INFO b'Find element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-06-18 15:29:16,495 baseView.py[line:48] INFO b'Click element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-06-18 15:29:17,494 baseView.py[line:23] INFO b'Find element by accessibility id: \xe8\xbf\x9e\xe6\x8e\xa5\xe8\xbd\xa6\xe8\xbe\x86\xef\xbc\x8c\xe5\xbc\x80\xe5\xa7\x8b\xe5\xaf\xbc\xe8\x88\xaa\xe3\x80\x82'
+2019-06-18 15:29:19,545 baseView.py[line:23] INFO b'Find element by accessibility id: Toggle Trip Button'
+2019-06-18 15:29:20,195 baseView.py[line:48] INFO b'Click element by accessibility id: Toggle Trip Button'
+2019-06-18 15:52:23,661 bwm_caps.py[line:33] INFO Start APP.
+2019-06-18 15:52:33,929 baseView.py[line:27] INFO b'Find element by accessibility id: 1'
+2019-06-18 15:52:34,304 baseView.py[line:52] INFO b'Click element by accessibility id: 1'
+2019-06-18 15:52:34,945 baseView.py[line:27] INFO b'Find element by accessibility id: 2'
+2019-06-18 15:52:35,345 baseView.py[line:52] INFO b'Click element by accessibility id: 2'
+2019-06-18 15:52:36,120 baseView.py[line:27] INFO b'Find element by accessibility id: 3'
+2019-06-18 15:52:36,496 baseView.py[line:52] INFO b'Click element by accessibility id: 3'
+2019-06-18 15:52:37,146 baseView.py[line:27] INFO b'Find element by accessibility id: 4'
+2019-06-18 15:52:37,522 baseView.py[line:52] INFO b'Click element by accessibility id: 4'
+2019-06-18 15:52:38,164 baseView.py[line:27] INFO b'Find element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:52:39,598 baseView.py[line:52] INFO b'Click element by accessibility id: \xe7\x9b\xae\xe7\x9a\x84\xe5\x9c\xb0'
+2019-06-18 15:52:40,324 baseView.py[line:27] INFO b'Find element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:52:42,697 baseView.py[line:52] INFO b'Click element by accessibility id: \xe6\x82\xa8\xe8\xa6\x81\xe5\x8e\xbb\xe5\x93\xaa\xef\xbc\x9f'
+2019-06-18 15:52:43,746 baseView.py[line:27] INFO b'Find element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:52:45,458 baseView.py[line:52] INFO b'Click element by accessibility id: \xe5\x8a\xa0\xe6\xb2\xb9\xe7\xab\x99'
+2019-06-18 15:52:49,149 baseView.py[line:27] INFO b'Find element by accessibility id: GeneralIconDrawer'
+2019-06-18 15:52:57,600 baseView.py[line:40] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:53:05,405 baseView.py[line:40] INFO b"Find elements by -ios predicate string: name=='Destination Index'"
+2019-06-18 15:53:16,016 baseView.py[line:27] INFO b'Find element by accessibility id: \xe5\x9c\xa8\xe8\xbd\xa6\xe5\x86\x85\xe5\xbc\x80\xe5\xa7\x8b'
+2019-06-18 15:53:19,066 baseView.py[line:52] INFO b'Click element by accessibility id: \xe5\x9c\xa8\xe8\xbd\xa6\xe5\x86\x85\xe5\xbc\x80\xe5\xa7\x8b'
+2019-06-18 15:53:20,162 baseView.py[line:27] INFO b'Find element by accessibility id: \xe5\xa5\xbd'
+2019-06-18 15:53:20,827 baseView.py[line:52] INFO b'Click element by accessibility id: \xe5\xa5\xbd'
+2019-06-18 15:53:21,512 baseView.py[line:27] INFO b'Find element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-06-18 15:53:22,466 baseView.py[line:52] INFO b'Click element by accessibility id: \xe6\xb4\xbb\xe5\x8a\xa8'
+2019-06-18 15:53:23,713 baseView.py[line:27] INFO b'Find element by accessibility id: \xe8\xbf\x9e\xe6\x8e\xa5\xe8\xbd\xa6\xe8\xbe\x86\xef\xbc\x8c\xe5\xbc\x80\xe5\xa7\x8b\xe5\xaf\xbc\xe8\x88\xaa\xe3\x80\x82'
+2019-06-18 15:53:25,467 baseView.py[line:27] INFO b'Find element by accessibility id: Toggle Trip Button'
+2019-06-18 15:53:26,012 baseView.py[line:52] INFO b'Click element by accessibility id: Toggle Trip Button'

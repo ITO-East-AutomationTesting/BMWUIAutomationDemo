@@ -1,12 +1,9 @@
 # coding=utf-8
-import os
-import sys
+
 import time
 import random
 
 from appium.webdriver.common.touch_action import TouchAction
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from baseView.baseView import BaseView, MobileBy
 
 
@@ -15,7 +12,8 @@ class DestinationPage(BaseView):
     result_cell = (MobileBy.IOS_PREDICATE, "name=='Destination Index'")
 
     general_icon_drawer = (MobileBy.ACCESSIBILITY_ID, 'GeneralIconDrawer')
-    start_trip_button = (MobileBy.ACCESSIBILITY_ID, 'Start Trip Button')
+    start_trip_button = (MobileBy.ACCESSIBILITY_ID, '在车内开始')
+    ready_ok = (MobileBy.ACCESSIBILITY_ID, '好')
     find_parking_Button = (MobileBy.ACCESSIBILITY_ID, 'Find Parking Button')
     end_trip_button = (MobileBy.ACCESSIBILITY_ID, 'End Trip Button')
 
@@ -56,6 +54,7 @@ class DestinationPage(BaseView):
 
     def click_start_trip_button(self):
         self.click(self.start_trip_button)
+        self.click(self.ready_ok)
 
     def click_end_trip_button(self):
         self.click(self.end_trip_button)

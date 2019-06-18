@@ -1,7 +1,6 @@
 # coding=utf-8
-import logging
+
 import os
-import sys
 import time
 
 from appium.webdriver.common.mobileby import MobileBy
@@ -9,7 +8,9 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+from utils.base_log import Log
+
+logging = Log().get_logger()
 
 
 class BaseView(object):
@@ -20,7 +21,7 @@ class BaseView(object):
         self.driver = driver
 
     def find_element(self, loc):
-        logging.info(('Find element by %s: %s' % (loc[0], loc[1])).encode('utf-8'))
+        logging.info(('Find element by %s: %s' % (loc[0], loc[1])))
 
         try:
             element = WebDriverWait(self.driver, 30).until(lambda x:x.find_element(*loc))
@@ -33,7 +34,7 @@ class BaseView(object):
             raise
 
     def find_elements(self, loc):
-        logging.info(('Find elements by %s: %s' % (loc[0], loc[1])).encode('utf-8'))
+        logging.info(('Find elements by %s: %s' % (loc[0], loc[1])))
         try:
             elements = WebDriverWait(self.driver, 30).until(EC.presence_of_all_elements_located(locator=loc))
             return elements
@@ -45,7 +46,7 @@ class BaseView(object):
     def click(self, loc):
         try:
             ele = self.find_element(loc)
-            logging.info(('Click element by %s: %s' % (loc[0], loc[1])).encode('utf-8'))
+            logging.info(('Click element by %s: %s' % (loc[0], loc[1])))
             ele.click()
             # time.sleep(1)
         except AttributeError:
