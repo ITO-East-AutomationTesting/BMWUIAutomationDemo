@@ -15,9 +15,9 @@ def bwm_desired():
 
     desired_caps = {
         "platformName": data["platformName"],
-        "platformVersion": get_device_version(),
-        "deviceName": get_device_name(),
-        "udid": get_device_udid(),
+        "platformVersion": data["platformVersion"],
+        "deviceName": data["deviceName"],
+        "udid": data["udid"],
         "app": data["app"],
         "noReset": data["noReset"],
         "automationName": data["automationName"],
