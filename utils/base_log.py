@@ -20,7 +20,7 @@ class Log:
 
         # create handler,write log
         fh = logging.FileHandler(os.path.join(log_dir, time.strftime('%Y%m%d%H%M%S', time.localtime()) +
-                                              '.log'))
+                                              '.log'), encoding='utf-8')
         # Define the output format of formatter handler
         formatter = logging.Formatter('%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
         fh.setFormatter(formatter)

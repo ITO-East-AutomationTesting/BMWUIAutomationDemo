@@ -21,7 +21,7 @@ class BaseView(object):
         self.driver = driver
 
     def find_element(self, loc):
-        logging.info('Find element by %s: %s' % (loc[0], loc[1].encode('utf-8')))
+        logging.info('Find element by %s: %s' % (loc[0], loc[1]))
 
         try:
             element = WebDriverWait(self.driver, 30).until(lambda x:x.find_element(*loc))
@@ -34,7 +34,7 @@ class BaseView(object):
             raise
 
     def find_elements(self, loc):
-        logging.info('Find elements by %s: %s' % (loc[0], loc[1].encode('utf-8')))
+        logging.info('Find elements by %s: %s' % (loc[0], loc[1]))
         try:
             elements = WebDriverWait(self.driver, 30).until(EC.presence_of_all_elements_located(locator=loc))
             return elements
@@ -46,7 +46,7 @@ class BaseView(object):
     def click(self, loc):
         try:
             ele = self.find_element(loc)
-            logging.info('Click element by %s: %s' % (loc[0], loc[1].encode('utf-8')))
+            logging.info('Click element by %s: %s' % (loc[0], loc[1]))
             ele.click()
             # time.sleep(1)
         except AttributeError:
@@ -55,7 +55,7 @@ class BaseView(object):
     def clicks(self, loc, index):
         try:
             elements = self.find_elements(loc)
-            logging.info('Click element by %s: %s' % (loc[0], loc[1].encode('utf-8')))
+            logging.info('Click element by %s: %s' % (loc[0], loc[1]))
             elements[index].click()
             # time.sleep(1)
         except AttributeError:
@@ -78,7 +78,7 @@ class BaseView(object):
         try:
             element = self.find_elements(loc)[index]
             element.click()
-            logging.info(('Send keys %s' % text).encode('utf-8'))
+            logging.info('Send keys %s' % text)
             element.set_value(text)
             self.click(self.btn)
         except AttributeError:
