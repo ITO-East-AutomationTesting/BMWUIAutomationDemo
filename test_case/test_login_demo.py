@@ -67,14 +67,14 @@ class TestDemo(unittest.TestCase):
 
         print('2. 点击目的地.')
         mainPage = MainPage(self.driver)
-        mainPage.click_bottom_button_by_name('目的地')
+        mainPage.click_bottom_button_by_name(u'目的地')
 
         print('2. 点击想要去哪里.')
         destinationPage = DestinationPage(self.driver)
         destinationPage.click_search_box()
 
         print('3. 点击加油站.')
-        destinationPage.click_destination_by_name('加油站')
+        destinationPage.click_destination_by_name(u'加油站')
 
         print('4. 随机选择加油站')
         destinationPage.select_result_by_name()
@@ -83,7 +83,7 @@ class TestDemo(unittest.TestCase):
         destinationPage.click_start_trip_button()
 
         print('6. 跳转到活动页面')
-        mainPage.click_bottom_button_by_name('活动')
+        mainPage.click_bottom_button_by_name(u'活动')
 
         print('7.关闭active活动行程')
         activityPage = ActivityPage(self.driver)
@@ -102,11 +102,11 @@ class TestDemo(unittest.TestCase):
 
         print('2. 点击更多.')
         mainPage = MainPage(self.driver)
-        mainPage.click_bottom_button_by_name('更多')
+        mainPage.click_bottom_button_by_name(u'更多')
 
         print('3. 点击个人资料')
         morePage = MorePage(self.driver)
-        morePage.click_button_by_name('个人资料')
+        morePage.click_button_by_name(u'个人资料')
 
         print('4. 点击注销按钮')
         morePage.click_logout_button()
