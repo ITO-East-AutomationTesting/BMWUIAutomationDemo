@@ -14,5 +14,5 @@ commandTimeouts: 35000
 newCommandTimeout: 1000
 
 #ip: 127.0.0.
-ip: 10.10.100.140
+ip: 10.10.100.137
 port: 4723
