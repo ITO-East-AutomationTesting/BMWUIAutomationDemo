@@ -13,6 +13,6 @@ useNewWDA: false
 commandTimeouts: 35000
 newCommandTimeout: 1000
 
-#ip: 127.0.0.1
+#ip: 127.0.0.
 ip: 10.10.100.140
 port: 4723
