@@ -5,6 +5,7 @@
 import os
 import sys
 from io import StringIO as StringIO
+import datetime
 import time
 import json
 import unittest
@@ -172,7 +173,9 @@ class ReportTestResult(unittest.TestResult):
             当测试用力执行完成后进行调用
         :return:
         """
-        self.end_time = '{0:.3} s'.format((time.time() - self.start_time))
+        duration = time.time() - self.start_time
+        self.end_time = '{:.0f}m {:.0f}s'.format(duration // 60, duration % 60)
+        # self.end_time = '{0:.3} s'.format((time.time() - self.start_time))
         self.result_list.append(self.get_all_result_info_tuple(test))
         self.complete_output()
 
